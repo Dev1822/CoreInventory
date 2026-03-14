@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@theme {
+  --color-zoho-blue: #0088ff;
+  --color-zoho-dark-blue: #0056b3;
+  --color-zoho-bg: #f5f6f8;
+  --color-zoho-sidebar: #222e3e;
+  --color-zoho-sidebar-hover: #324155;
+  --color-zoho-border: #e0e6ed;
+  --color-zoho-text: #333333;
+  --color-zoho-text-light: #777777;
+}
+
+body {
+  color: var(--color-zoho-text);
+  background: var(--color-zoho-bg);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom Table Styles matching Zoho Data grids */
+.zoho-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.zoho-table th {
+  background-color: #fafbfc;
+  color: var(--color-zoho-text-light);
+  font-weight: 600;
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 2px solid var(--color-zoho-border);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.zoho-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--color-zoho-border);
+  font-size: 0.95rem;
+}
+
+.zoho-table tr:hover {
+  background-color: #fcfcfc;
+}
+
+.zoho-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Base button styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.95rem;
+}
+
+.btn-primary {
+  background-color: var(--color-zoho-blue);
+  color: white;
+  border: 1px solid var(--color-zoho-blue);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-zoho-dark-blue);
+}
+
+.btn-outline {
+  background-color: white;
+  color: var(--color-zoho-text);
+  border: 1px solid var(--color-zoho-border);
+}
+
+.btn-outline:hover {
+  background-color: #f9fafb;
+}
+
+/* Forms */
+.form-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--color-zoho-border);
+  border-radius: 4px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: var(--color-zoho-blue);
+  box-shadow: 0 0 0 1px var(--color-zoho-blue);
+}
+
+.form-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-zoho-text);
+  margin-bottom: 6px;
+}
